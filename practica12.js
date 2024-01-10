@@ -3,7 +3,7 @@ let suma = 0
 
 //En cada interaccion "i" tiene el valor de 1,2,3,4,5,6,7,8,9,10
 
-for (let i=1; i<=5; i++)
+for (let i=1; i<=10; i++)
 {
     suma = suma + i
     console.log(suma)
