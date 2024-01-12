@@ -15,5 +15,4 @@ for(x=0; x<arreglo.length; x++)
         }
     }
 }
-
 console.log(arreglo)
