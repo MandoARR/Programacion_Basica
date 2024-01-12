@@ -9,7 +9,8 @@
 //pista 3 : necesitas llevar la suma izq y la derecha para poder compararlos
 //pista 4 : utiliza return para terminar el programa
 
-let arreglo = [1,7,3,6,5,6]
+/*
+let arreglo = [5,2,1,4]
 let sumIzq = 0
 let sumDer = 0
 
@@ -33,9 +34,6 @@ for(let i=0; i<arreglo.length; i++)
 
 console.log(-1)
 
-/*
-console.log(-1)
-
 let arr = [1,7,3,6,5,6]
 let sumLeft = 0
 let sumRigth = 5
@@ -52,30 +50,29 @@ for(let i=0; i<arr.length; i++)
         sumIzq = sumIzq + arreglo[i]    
     }
 }
-
-
-
 console.log(-1)
+*/
 
-for(let i=0; i<arreglo.length; i++)
+let arr = [5,2,1,4]
+let sumLeft = 0
+let sumRigth = 0
+
+for(let i=0; i<arr.length; i++)
 {
-    sumDer = 0
+    sumRigth = 0
     
-    for(let j=arreglo.length-1; j>1; j--);
+    for(let j=arr.length-1; j>0; j--)
     {
-        sumDer = sumDer + arreglo[j]  
+        sumRigth = sumRigth + arr[j]  
     }
 
-    if(sumIzq == sumDer)
+    if(sumLeft == sumRigth)
     {
         console.log(i);
         return;
     }
 
-    sumIzq = sumIzq + arreglo[i]
+    sumLeft = sumLeft + arr[i]
 }
 
 console.log(-1)
-
-*/
-
