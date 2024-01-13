@@ -1,7 +1,5 @@
 //DOM
 
-
-
 function saludar()
 {
     //acceso al DOM 
@@ -11,17 +9,13 @@ function saludar()
     elementoSection.innerText = "Hola Enfermera !"
 }
 
-
 function llamarOrdenar()
 {
     let elementosNumeros = document.getElementById('txtNumeros')
-    //JSON.parse convierte texto a valores 
+    //JSON.parse convierte texto a valores "[1,2,3]" = [1,2,3]
     let arreglo1 = JSON.parse(elementosNumeros.value)
     let resultado = ordenaArreglos(arreglo1)
 
-    let elementos= document.getElementById('txtNombre')
+    let elementoSection= document.getElementById('resultado')
     elementoSection.innerText = resultado
 }
-//console.log(document.getElementById('resultado'))
-
-//console.log(elementoSection.innerText)
