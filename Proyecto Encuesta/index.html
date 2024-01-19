@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1080, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encuesta</title>
     <link href="css/app.css" rel="stylesheet" />
 </head>
 
@@ -19,18 +19,21 @@
             
             <section>
                 <label for="txtCorreo">Correo: </label>
-                <input type="text" id="txtNombre" name="txtNombre">
+                <input type="email" id="txtCorreo" name="txtCorreo">
             </section>
 
-            <p>Selecciona tu genero:</p>
-            <span>Masculino<input type="radio" name="rdoGenero" id="rdoGenero"></span>
-            <span>Femenino<input type="radio" name="rdoGenero" id="rdoGenero"></span>
-            <span>Masculino<input type="radio" name="rdoGenero" id="rdoGenero"></span>
-            
-            <p>Satisfaccion del curso:</p>
-            <input type="range" oninput="actualizaSatisfaccion()" name="nmSatisfaccion" value="10" min="1" max="10" step="1">
-            <section id="scSatisfaccion">10</section>
+            <section>
+                <p>Selecciona tu genero:</p>
+                <span>Masculino<input type="radio" name="rdoGenero" id="rdoGeneroM"></span>
+                <span>Femenino<input type="radio" name="rdoGenero" id="rdoGeneroF"></span>
+                <span>Prefiero no decir<input type="radio" name="rdoGenero" id="rdoGeneroN"></span>
+            </section>
 
+            <section>            
+                <p>Satisfaccion del curso:</p>
+                <input type="range" oninput="actualizaSatisfaccion()" name="nmSatisfaccion" value="10" min="1" max="10" step="1" id="nmSatisfaccion">
+                <section id="scSatisfaccion">10</section>
+            </section>
         </fieldset>
 
         <fieldset>

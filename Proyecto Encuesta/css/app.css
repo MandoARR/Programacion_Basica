@@ -6,7 +6,7 @@ body {
 main {
     margin: 0 auto;
     width: 450px;
-    background-color:lightsteelblue;
+    background-color:aliceblue;
     
 }
 
@@ -27,8 +27,8 @@ textarea{
 }
 
 footer{
-    margin-top: 5px;
-    
+    padding-top: 10px;
+    text-align: right;
 }
 
 #scResultados {
