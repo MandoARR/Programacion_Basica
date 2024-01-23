@@ -15,45 +15,67 @@ function guardarDatos(){
 }
 
 function validaNombre(){
-    
+    let nombre = obtenerElemento('txtNombre')
+    if(nombre.value == ""){
+        reportaError("Escribe tu Nombre")
+        return false
+    }
     return true
 }
 
 function validaCorreo(){
-    
+    let correo = obtenerElemento('txtCorreo')
+    if(correo.value == ""){
+        reportaError("Escribe tu Correo")
+        return false
+    }
+
+    if (!correo.value.includes("@")||!correo.value.includes(".com")) {
+        reportaError("Escribe un Correo con el formato @ y .com")
+        return false
+    }
 
     return true
 }
 
 function validaGenero(){
-    
+    let genero = document.querySelector('input[name="rdoGenero"]:checked')
 
+    if (genero == null) {
+        reportaError("Selecciona un Genero")
+        return false
+    }
     return true
 }
 
 function limpiarRespuesta(){
-    
+    let resultados =obtenerElemento('scResultados')
+    resultados.setAttribute("class","")
+    resultados.innerText=""
 }
 
 function reportaError(mensaje) {
-    
-    
-    /*let contenedorRespuesta = document.getElementById(ID_CONTENEDOR_RESPUESTA);
-    contenedorRespuesta.setAttribute("class", "")//limpia las clases anteriores
-    contenedorRespuesta.classList.add('error')
-    */
+    let resultados = obtenerElemento('scResultados')
+    resultados.setAttribute("class", "")
+    resultados.classList.add("error")
+    resultados.innerText+= mensaje + "\n"
 }
 
 function reportaExito(mensaje){
-    
+    let resultados = obtenerElemento('scResultados')
+    resultados.setAttribute("class", "")
+    resultados.classList.add("exito")
+    resultados.innerText=mensaje
 }
 
-function obtenerValor(input){
+function obtenerElemento(input){
+    return document.getElementById(input)
     
 }
 
 function actualizaSatisfaccion(){
     let elementoScSatisfaccion = document.getElementById('scSatisfaccion')
-    elementoScSatisfaccion.innerText = "Algo"
+    let elementoNmSatisfaccion = obtenerElemento('nmSatisfaccion')
+    elementoScSatisfaccion.innerText = elementoNmSatisfaccion.value
    
 }

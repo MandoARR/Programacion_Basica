@@ -31,7 +31,11 @@
 
             <section>            
                 <p>Satisfaccion del curso:</p>
-                <input type="range" oninput="actualizaSatisfaccion()" name="nmSatisfaccion" value="10" min="1" max="10" step="1" id="nmSatisfaccion">
+                
+                <input type="range" oninput="actualizaSatisfaccion()" 
+                name="nmSatisfaccion" value="10" min="1" max="10" 
+                step="1" id="nmSatisfaccion">
+                
                 <section id="scSatisfaccion">10</section>
             </section>
         </fieldset>
@@ -41,15 +45,13 @@
             <textarea rows="5"></textarea>
         </fieldset>
         <footer>
-            <button>Guardar!</button>
+            <button onclick="guardarDatos()">Guardar!</button>
         </footer>
     </main>
-    <section id="scResultados" class="error">
-        Hola
+    <section id="scResultados">
+      
 
     </section>
-    
-    <section id="scResultados"></section>
     <script src="js/app.js" ></script>
 </body>
 

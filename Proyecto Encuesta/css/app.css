@@ -34,6 +34,7 @@ footer{
 #scResultados {
     margin: 0 auto;
     width: 450px;
+    margin-top: 6px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 3px;
@@ -41,11 +42,11 @@ footer{
 }
 
 .error{
-    border: 1px dashed red;
+    border: 2px dashed red;
     color: red;
 }
 
 .exito{
-    border: 1px dashed green;
+    border: 2px dashed green;
     color: green;
 }
