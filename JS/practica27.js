@@ -1,16 +1,19 @@
-let galletasEnLaCaja = 10; 
+// Implementa una while verificando las galletas.
+// Si quedan galletas come una galleta.
+// Imprime cuántas galletas quedan.
+// Al final imprime que has terminado.
 
-function quedanGalletas() {
-    return galletasEnLaCaja 
+
+let galletasEnLaCaja = 10; // Galletas iniciales
+function quedanGalletas() { // Verdadero si quedan al menos una galleta
+    return galletasEnLaCaja > 0;
 }
 
 function comerGalletas() {
-    galletasEnLaCaja --;
-    return galletasEnLaCaja;
+    while (quedanGalletas() != false) {
+        console.log("La cantidad de galletas es: " + galletasEnLaCaja);
+        galletasEnLaCaja--;
+    }
+    console.log("La caja de galletas esta vacia D:")
 }
-
-
-while(quedanGalletas != true){
-    comerGalletas();
-    console.log("La cantidad de galletas es: " + galletasEnLaCaja)
-}
+comerGalletas();
