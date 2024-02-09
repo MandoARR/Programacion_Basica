@@ -67,11 +67,10 @@ const array = [
     },
   ];
 //Ctrl + d
-  array.sort((a, b) => a.edad - b.edad);
-  array.forEach((element)=>{
-    console.log(element.nombre)
-  })
+let newArray = array.filter(element => element.activo === true)
+let totalAge = 0
+newArray.forEach((element) => {
+  totalAge += element.edad
+})
 
-
-  let array2 = array.every(element => element.activo == true)
-  console.log(array2)
+console.log(totalAge)

@@ -66,7 +66,7 @@ const array = [
       }
     },
   ];
-
+//Ctrl + d
   array.sort((a, b) => a.edad - b.edad);
   array.forEach((element)=>{
     console.log(element.nombre)
