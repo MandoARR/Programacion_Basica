@@ -8,11 +8,11 @@ document.getElementById('btnAccion').addEventListener('click', () =>{
     
     //Se separan las palabras 
     numWords = text.split(" ").forEach(element => {
-        if (words.length == element.length){
-            words += element
-        }
-        if (words.length < element.length) {
+        if (words.length < element.length){
             words = element
+        }
+        if (words.length == element.length){ //pendiente resolver como ir separando los caracteres 
+            words += element
         }
         
     });
