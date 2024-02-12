@@ -71,7 +71,9 @@ const array = [
 let count = 0
 let sum = 0
 let average = 0
-array.forEach(element => {
+let newArray = array.filter(element => element.activo === true)
+
+newArray.forEach(element => {
   sum += element.edad;
   count++;
 })
