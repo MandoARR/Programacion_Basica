@@ -67,6 +67,8 @@ const array = [
     },
   ];
 
+//Imprimir los nombres de las personas que tenga como interes la tecnologia y que su estatus de activo sea "false"
+
 let newArray = array.filter(element => element.intereses.includes('tecnología') && element.activo === false)
 newArray.forEach((element) => {
   console.log(element.nombre)
