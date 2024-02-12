@@ -46,7 +46,7 @@ const array = [
     {
       nombre: "Luis",
       edad: 40,
-      activo: true,
+      activo: false,
       intereses: ["ciencia", "historia", "tecnología"],
       direccion: {
         calle: "Avenida del Saber",
@@ -67,10 +67,14 @@ const array = [
     },
   ];
 
-//Imprimir los nombres de las personas que tenga como interes la tecnologia y que su estatus de activo sea "true"
-//Para este ejercicio se cambio el a "true" el estado de Luis
-
-let newArray = array.filter(element => element.intereses.includes('tecnología') && element.activo === true)
-newArray.forEach((element) => {
-  console.log(element.nombre)
+//Calcular el promedio de edad de los usuarios activos.
+let count = 0
+let sum = 0
+let average = 0
+array.forEach(element => {
+  sum += element.edad;
+  count++;
 })
+
+average = sum / count
+console.log(average)

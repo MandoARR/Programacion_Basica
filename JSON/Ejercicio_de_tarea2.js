@@ -46,7 +46,7 @@ const array = [
     {
       nombre: "Luis",
       edad: 40,
-      activo: true,
+      activo: false,
       intereses: ["ciencia", "historia", "tecnología"],
       direccion: {
         calle: "Avenida del Saber",
@@ -67,10 +67,9 @@ const array = [
     },
   ];
 
-//Imprimir los nombres de las personas que tenga como interes la tecnologia y que su estatus de activo sea "true"
-//Para este ejercicio se cambio el a "true" el estado de Luis
+//Filtrar y mostrar los usuarios que tienen al menos un interés relacionado con la tecnología.
 
-let newArray = array.filter(element => element.intereses.includes('tecnología') && element.activo === true)
+let newArray = array.filter(element => element.intereses.includes('tecnología'))
 newArray.forEach((element) => {
   console.log(element.nombre)
 })

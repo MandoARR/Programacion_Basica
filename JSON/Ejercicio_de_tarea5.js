@@ -46,7 +46,7 @@ const array = [
     {
       nombre: "Luis",
       edad: 40,
-      activo: true,
+      activo: false,
       intereses: ["ciencia", "historia", "tecnología"],
       direccion: {
         calle: "Avenida del Saber",
@@ -67,10 +67,11 @@ const array = [
     },
   ];
 
-//Imprimir los nombres de las personas que tenga como interes la tecnologia y que su estatus de activo sea "true"
-//Para este ejercicio se cambio el a "true" el estado de Luis
-
-let newArray = array.filter(element => element.intereses.includes('tecnología') && element.activo === true)
-newArray.forEach((element) => {
-  console.log(element.nombre)
+//Contar cuántos usuarios tienen más de 30 años.
+let cont = 0
+array.forEach(element => {
+  if (element.edad > 30){
+    cont++
+  }
 })
+console.log(cont)

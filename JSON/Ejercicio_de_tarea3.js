@@ -46,7 +46,7 @@ const array = [
     {
       nombre: "Luis",
       edad: 40,
-      activo: true,
+      activo: false,
       intereses: ["ciencia", "historia", "tecnología"],
       direccion: {
         calle: "Avenida del Saber",
@@ -67,10 +67,7 @@ const array = [
     },
   ];
 
-//Imprimir los nombres de las personas que tenga como interes la tecnologia y que su estatus de activo sea "true"
-//Para este ejercicio se cambio el a "true" el estado de Luis
+//Encontrar y mostrar el nombre del usuario más joven.
 
-let newArray = array.filter(element => element.intereses.includes('tecnología') && element.activo === true)
-newArray.forEach((element) => {
-  console.log(element.nombre)
-})
+array.sort((a,b) => a.edad - b.edad)
+console.log(array[0].nombre)
