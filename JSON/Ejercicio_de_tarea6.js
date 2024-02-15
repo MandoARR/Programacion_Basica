@@ -68,15 +68,14 @@ const array = [
   ];
 
 //Calcular el promedio de edad de los usuarios activos.
-let count = 0
+//let count = 0 Profe Carlos dio tips para ahorrar codigo por lo que se ahorra esta variable 
 let sum = 0
-let average = 0
+//let average = 0 Profe Carlos dio tips para ahorrar codigo por lo que se ahorra esta variable 
 let newArray = array.filter(element => element.activo === true)
 
 newArray.forEach(element => {
   sum += element.edad;
-  count++;
+  //count++; Profe Carlos dio tips para ahorrar codigo por lo que se ahorra esta variable 
 })
 
-average = sum / count
-console.log(average)
+console.log(sum / newArray.length)

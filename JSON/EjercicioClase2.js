@@ -67,9 +67,10 @@ const array = [
     },
   ];
 
-//Encontrar y mostrar el nombre del usuario más joven.
+//2 arreglos, uno de todos los ele
 
-array.sort((a,b) => a.edad - b.edad)
-array.forEach(element => {
-  console.log(element.nombre)
-})
+let arrayAvenida = array.filter(element => element.direccion.calle.includes('Avenida'))
+let arrayCalle = array.filter(element => element.direccion.calle.includes('Calle'))
+
+console.log(arrayAvenida)
+console.log(arrayCalle)

@@ -67,9 +67,20 @@ const array = [
     },
   ];
 
-//Encontrar y mostrar el nombre del usuario más joven.
+//Invertir su estado en un nuevo arreglo
+//Si quedo activo agregaren sus intereses al final "js"
+//Inactivo "css" "html"
 
-array.sort((a,b) => a.edad - b.edad)
-array.forEach(element => {
-  console.log(element.nombre)
-})
+let newArray3 = [...array];
+
+newArray3.forEach((element) => {
+  element.activo = !element.activo;
+  
+  if (element.activo === true) {
+    element.intereses.push("js");
+  } else {
+    element.intereses.push("css/html");
+  }
+});
+
+console.log(newArray3);
