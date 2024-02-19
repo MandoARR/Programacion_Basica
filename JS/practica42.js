@@ -1,3 +1,5 @@
+//EJERCICIO REDUCE()
+//Imprime el producto con el precio más caro
 const productos = [
     { nombre: 'Camiseta', precio: 20 },
     { nombre: 'Pantalón', precio: 40 },
@@ -11,7 +13,9 @@ const expensive = productos.reduce((acc, producto) => {
     if (acc.precio > producto.precio) {
         return acc;
     }
+    else{
         return producto;
+    }
 },{});
 
-console.log("El producto más caro es:", expensive.nombre, " - $", expensive.precio);
+console.log(expensive);

@@ -8,6 +8,3 @@ caballeros = nombresConT.concat(caballeros);
 console.log(caballeros);
 
 
-/*
-Lista de alumnos donde ordenamos los nombres 
-*/
