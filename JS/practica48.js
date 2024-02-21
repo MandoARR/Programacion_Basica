@@ -14,5 +14,3 @@ const estudiantes = [
 const sum = estudiantes.reduce((acc, puntuacion) => acc += puntuacion.calificacion,0)
 console.log(sum/estudiantes.length);
 
-
-

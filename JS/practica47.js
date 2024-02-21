@@ -13,7 +13,7 @@ const estudiantes = [
 
 const frecuencia = {};
 
-estudiantes.map(element => {
+estudiantes.forEach(element => {
     const teacher = element.profesor;
     
     if (frecuencia[teacher]) {

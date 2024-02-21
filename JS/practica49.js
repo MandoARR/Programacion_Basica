@@ -11,21 +11,21 @@ const estudiantes = [
     { nombre: "Sofía", profesor: "Profe 4", calificacion: 92 }
 ];
 
+const frecuencia = {};
 
-const newArray = estudiantes.map((element) => {
-    
-}) 
-
-//ejemplo
-estudiantes.map(element => {
+estudiantes.forEach(element => {
     const teacher = element.profesor;
+    const puntuacion = element.calificacion;
     
-    if (frecuencia[teacher]) {
-        frecuencia[teacher]++;
-    } else {
-        frecuencia[teacher] = 1;
+    if (frecuencia[teacher]){
+        frecuencia[teacher] += puntuacion;
+    } else{
+        frecuencia[teacher] = puntuacion;
     }
 });
+
+console.log(frecuencia);
+console.log(len);
 
 
 
