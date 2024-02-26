@@ -8,16 +8,17 @@ document.getElementById('btnAccion').addEventListener('click', () =>{
     
     //Se separan las palabras 
     numWords = text.split(" ").forEach(element => {
+        if (words.length === element.length){ //pendiente resolver como ir separando los caracteres 
+            words += (" " + element)
+        }
+
         if (words.length < element.length){
             words = element
-        }
-        if (words.length == element.length){ //pendiente resolver como ir separando los caracteres 
-            words += element
         }
         
     });
 
     //En caso de tener mas 1 palabra grande se intenta separarlas con " "
-    let bigWord = words.split(" ")
-    document.getElementById('scResultados').innerText = "La palabra o palabras mas grande es: " + bigWord
+    //let bigWord = words.split(" ")
+    document.getElementById('scResultados').innerText = "La palabra o palabras mas grande es: " + words
 })
