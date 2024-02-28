@@ -1,4 +1,5 @@
-//El fetch ponlo en una función y mándalo llamar.
+//Haz una tabla con los datos que vienen aquí, algo como el ejemplo, fíjate que al final del URL
+//viene el nombre.
 
 const url = "https://pokeapi.co/api/v2/pokemon/"; 
 fetch(url) 

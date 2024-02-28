@@ -1,6 +1,5 @@
-//El fetch ponlo en una función y mándalo llamar.
-
-const url = "https://pokeapi.co/api/v2/pokemon/"; 
+//- Crea un método que reciba el nombre de un pokemon y traiga sus datos.
+//const url = "https://pokeapi.co/api/v2/pokemon/"; 
 fetch(url) 
 .then((response) => response.json()) 
 .then((data) => { 
