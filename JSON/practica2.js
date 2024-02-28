@@ -1,10 +1,9 @@
 //Crea un método para ordenar los pokemones por nombre e imprimirlos y ejécutalo
-
 const url = "https://pokeapi.co/api/v2/pokemon/"; 
 fetch(url) 
 .then((response) => response.json()) 
 .then((data) => { 
-orderPokemon(data.results)
+orderPokemon2(data.results)
 })
 
 function orderPokemon(pokemons){
@@ -12,4 +11,10 @@ function orderPokemon(pokemons){
     pokemons.forEach(element => {
         console.log(element.name)
     });
+}
+
+function orderPokemon2(pokemons){
+    const newArray = pokemons.map((element) => element.name);
+    newArray.sort()
+    console.log(newArray)
 }
