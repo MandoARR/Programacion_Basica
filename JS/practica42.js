@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
 //EJERCICIO REDUCE()
 //Imprime el producto con el precio más caro
-=======
-//Calcula la suma total de los precios de los productos
->>>>>>> Stashed changes
+
 const productos = [
     { nombre: 'Camiseta', precio: 20 },
     { nombre: 'Pantalón', precio: 40 },
