@@ -3,7 +3,5 @@
 const url = "https://pokeapi.co/api/v2/pokemon/"; 
 
 fetch(url) 
-.then((response) => response.json()) 
-.then((data) => { 
-orderPokemon2(data.results)
-})
+.then(console.log(data)) 
+
