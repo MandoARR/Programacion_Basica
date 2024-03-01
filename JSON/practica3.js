@@ -12,4 +12,6 @@ function orderPokemon(data){
     data.sort((a,b) => a.name.localeCompare(b.name))
 }
 
+console.log("Inicio") // Prueba para ver que que hace primero 
 pokeApi();
+console.log("Fin") // Prueba para ver que que hace primero. 
