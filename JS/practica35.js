@@ -3,4 +3,18 @@ const caballeros = ["Seiya", "Shiryu", "Hyōga", "Shun", "Ikki", "Saori", "Tenma
 
 const knigths = caballeros.filter(knigth => knigth.includes("i") || knigth.includes("I"))
 
-console.log(knigths)
+let total = 0
+let total2 = 0
+
+knigths.forEach(knigth => {
+    total += knigth.length
+})
+
+for (let index = 0; index < knigths.length; index++) {
+    total2 += knigths[index].length;
+    
+}
+
+
+console.log(total)
+console.log(total2)
